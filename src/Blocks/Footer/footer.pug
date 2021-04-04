@@ -1,0 +1,30 @@
+mixin footer(json="footer")
+    -let data = require(`Blocks/Footer/json/${json}.json`)
+    -let goods = data.goods
+    -let actions = data.offers
+    -let nav = data.nav
+    -let phone = data.phone
+    -let formattedPhone = `8(${phone.substr(2,3)})${phone.substr(5,3)}-${phone.substr(8,2)}-${phone.substr(10,2)}`
+
+    .footer
+        .footer__contacts
+            .footer__logo
+            .footer__phone
+                a.footer__phone_anchor(href=`tel:${phone}`)=formattedPhone
+                .footer__phone_about звонок по россии бесплатный
+        .footer__menu 
+            ul.footer__menu_goods
+                each good in goods 
+                    li.footer__menu_goods_item 
+                        a.footer__menu_goods_anchor(href=good.href)=good.title
+            ul.footer__menu_offers
+                each action in actions 
+                    li.footer__menu_offers_item 
+                        a.footer__menu_offers_anchor(href=action.href)=action.title
+            ul.footer__menu_nav
+                each link in nav 
+                    li.footer__menu_nav_item 
+                        a.footer__menu_nav_anchor(href=link.href)=link.title
+        .footer__copyright
+            span.footer__copyright_year
+            |© / pult.ru / все права защищены

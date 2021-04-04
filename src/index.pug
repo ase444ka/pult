@@ -1,0 +1,20 @@
+include ./blocks/Header/header
+include ./blocks/Slider/slider
+include ./blocks/Menu/menu
+include ./blocks/Footer/footer
+include ./blocks/Banner/banner
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        meta(content='width=device-width, initial-scale=1.0' name='viewport')
+        meta(http-equiv="x-ua-compatible" content="IE=edge")
+        title Купить продукцию Gallo Acoustics в интернет-магазине Pult.ru
+    body
+        .wrapper
+            +header()
+            +slider()
+            +slider("offers")
+            +menu()
+            +footer()
+            +banner()

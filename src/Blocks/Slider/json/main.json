@@ -1,0 +1,26 @@
+[
+  {
+    "image": "droplet.jpg",
+    "sloganClass": "white",
+    "slogan": "давай зажжем",
+    "brand": "droplet",
+    "products": "подвесная акустика",
+    "href": "#"
+  },
+  {
+    "image": "micro_micro-se.jpg",
+    "sloganClass": "blue",
+    "slogan": "побалуй себя выбором",
+    "brand": "micro и micro-se",
+    "products": "спутниковые колонки",
+    "href": "#"
+  },
+  {
+    "image": "PROFILESUBx2.jpg",
+    "sloganClass": "blue",
+    "slogan": "держаться в тени",
+    "brand": "profilesub",
+    "products": "сабвуфер",
+    "href": "#"
+  }
+]

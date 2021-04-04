@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  a {
+    display: block;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &__main-logo {
+    background: url('./images/logo_pult.svg');
+    width: 57px;
+    height: 57px;
+    margin-top: 10px;
+  }
+  &__promo-logo {
+    background: url('./images/Gallo_Acoustics.svg');
+    width: 162px;
+    height: 50px;
+  }
+}

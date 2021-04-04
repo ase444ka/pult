@@ -1,0 +1,109 @@
+@import 'Blocks/variables.scss';
+.footer {
+  text-transform: uppercase;
+  margin-top: 150px;
+  font-style: gilroy;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+  @media screen and (max-width: 1000px) {
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+  }
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  @media screen and (max-width: 500px) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem
+  }
+  gap: 3rem;
+
+  &__phone {
+    &_anchor {
+      font-size: 2rem;
+      text-decoration: none;
+      color: black;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &_about {
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    -ms-grid-column: 2;
+    @media screen and (max-width: 1000px) {
+      -ms-grid-column: 1;
+      -ms-grid-row: 2;
+    }
+    @media screen and (max-width: 500px) {
+      flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      @media screen and (max-width: 500px) {
+        padding: 0;
+      }
+    }
+    li {
+      list-style: none;
+      margin-bottom: 20px;
+      display: flex;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 0.9rem;
+
+      &:hover {
+        color: $blue;
+      }
+      
+    }
+    &_nav_anchor {
+      position: relative;
+      padding-right: 12px;
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        -ms-transform: rotate(45deg) translate(-250%, 35%);
+        transform: rotate(45deg) translate(-250%, 35%);
+        width: 1px;
+        height: 10px;
+        background: #0e0e0e;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        -webkit-transform: translate(-10%, 25%);
+        -ms-transform: translate(-10%, 25%);
+        transform: translate(-10%, 25%);
+        width: 6px;
+        height: 6px;
+        border-right: 1px solid #0e0e0e;
+        border-top: 1px solid #0e0e0e;
+      }
+    }
+  }
+
+  &__logo {
+    background: url('./images/logo_pult-footer.svg') no-repeat;
+    width: 100px;
+    height: 50px;
+  }
+  &__copyright {
+    font-size: 0.9rem;
+    -ms-grid-row: 2;
+    @media screen and (max-width: 1000px) {
+      -ms-grid-row: 3;
+    }
+  }
+}

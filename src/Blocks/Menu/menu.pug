@@ -1,0 +1,7 @@
+mixin menu(json="items")
+    -let items = require(`Blocks/Menu/json/${json}.json`)
+    ul.menu
+        each item in items
+            li.menu__item 
+                a.href.menu__item_anchor(href=item.href)=item.title
+                img.menu__item_image(src = require(`Blocks/Menu/images/${item.image}`) alt = item.title)

@@ -1,0 +1,12 @@
+
+  @font-face {
+    font-family: 'Graphik LC';
+    font-style: normal;
+    src: url('./Graphik LC Web Regular.eot'); /* IE9 Compat Modes */
+    src: local('Gilroy Semibold'), local('Graphik LC Web Regular'),
+      url('./Graphik LC Web Regular.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */ url('./Graphik LC Web Regular.woff2') format('woff2'),
+      /* Super Modern Browsers */ url('./Graphik LC Web Regular.woff') format('woff'),
+      /* Modern Browsers */ url('./Graphik LC Web Regular.ttf') format('truetype'); 
+      /* Safari, Android, iOS */
+  }

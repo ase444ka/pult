@@ -1,0 +1,9 @@
+mixin banner()
+    -let cross = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="none" fill-rule="evenodd" stroke="#FFFFFF" d="M14.978 1.542l-.236-.235-6.6 6.6-6.6-6.6-.235.235 6.6 6.6-6.6 6.6.235.236 6.6-6.6 6.6 6.6.236-.236-6.6-6.6 6.6-6.6z" opacity=".8"></path></svg>`
+    .banner
+        .banner__wrapper
+            .banner__text 
+                h3.banner__header А Ваша техника защищена?
+                p.banner__paragraph Обязательно используйте источники питания и фильтры 
+            a.banner__anchor(href="#") Cмотреть 
+            .banner__close-button !{cross}

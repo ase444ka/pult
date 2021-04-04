@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+  font-family: Gilroy;
+}
+.wrapper {
+  margin: 22px 4%;
+  @media screen and (max-width: 500px) {
+    margin: 10px 5px;
+  }
+}

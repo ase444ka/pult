@@ -1,0 +1,89 @@
+@import 'Blocks/variables.scss';
+
+.banner {
+  * {
+    font-family: 'Graphik LC';
+  }
+  opacity: 0;
+  transition: transform 0.4s ease-in, opacity 0.1s ease-in;
+  transform: translateY(-50px);
+  z-index: 2000;
+  position: fixed;
+  padding-left: 12px;
+  @media screen and (max-width: 350px) {
+    padding-left: 2px;
+  }
+  bottom: 30px;
+  left: 5px;
+  background-color: $light-blue;
+  &__wrapper {
+    z-index: 2000;
+    position: relative;
+    background-color: $light-blue;
+    background-image: url('./images/fire.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding: 32px 20px 28px 47px;
+    @media screen and (max-width: 600px) {
+      padding-left: 37px;
+    }
+    @media screen and (max-width: 350px) {
+      padding-left: 27px;
+    }
+    @media screen and (max-width: 650px) {
+        width: 300px;
+      }
+      @media screen and (max-width: 350px) {
+        width: 200px;
+      }
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    align-items: center;
+  }
+  &__text {
+    width: 287px;
+    padding-right: 8px;
+  }
+  &__anchor {
+    width: 160px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    background: white;
+    color: black;
+    font-weight: 800;
+    @media screen and (max-width: 600px) {
+      margin-top: 10px;
+    }
+  }
+  &__header {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  &__paragraph {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.3;
+  }
+  &__close-button {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    @media screen and (max-width: 600px) {
+      top: 15px;
+      right: 15px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &-active {
+    opacity: 1;
+    transform: initial;
+  }
+}

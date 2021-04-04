@@ -1,0 +1,24 @@
+mixin slider(json = "main")
+    -let slides = require(`Blocks/Slider/json/${json}.json`)
+    .slider.owl-carousel.owl-theme
+        each slide in slides
+            .slider__slide 
+                a.slider__slide__anchor(href=slide.href)
+                    .slider__slide__banner
+                        img.slider__slide__image(src = require(`Blocks/Slider/images/${slide.image}`))
+                        if slide.slogan
+                            -let sloganWords = slide.slogan.split(' ');
+                            -let firstWord = sloganWords[0];
+                            -let otherWords = ' ' + sloganWords.slice(1).join(' ');
+                            .slider__slide__slogan(class=`slider__slide__slogan-${slide.sloganClass}`)
+                                span=firstWord 
+                                |!{otherWords}
+                        else
+                            .slider__slide__offer(class=`slider__slide__offer-${slide.offerClass}`)= 'скидки до '
+                                .slider__slide__offer_persents=`${slide.offer}`
+                    .slider__slide__footer
+                        .slider__slide__brand=slide.brand 
+                        if slide.products 
+                            .slider__slide__products=slide.products
+                
+                

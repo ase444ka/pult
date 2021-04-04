@@ -1,0 +1,72 @@
+[
+  {
+    "image": "micro1.jpg",
+    "offerClass": "left",
+    "offer": "30%",
+    "brand": "Micro",
+    "href": "#"
+  },
+  {
+    "image": "micro-se.jpg",
+    "offerClass": "left",
+    "offer": "30%",
+    "brand": "Micro se",
+    "href": "#"
+  },
+  {
+    "image": "micro-droplet.jpg",
+    "offerClass": "left",
+    "offer": "30%",
+    "brand": "micro droplet",
+    "href": "#"
+  },
+  {
+    "image": "micro-droplet.jpg",
+    "offerClass": "left",
+    "offer": "30%",
+    "brand": "micro se droplet",
+    "href": "#"
+  },
+  {
+    "image": "micro-droplet.jpg",
+    "offerClass": "left",
+    "offer": "30%",
+    "brand": "adiva droplet",
+    "href": "#"
+  },
+  {
+    "image": "micro-droplet.jpg",
+    "offerClass": "left",
+    "offer": "30%",
+    "brand": "adiva se droplet",
+    "href": "#"
+  },
+  {
+    "image": "adiva.jpg",
+    "offerClass": "left",
+    "offer": "30%",
+    "brand": "adiva",
+    "href": "#"
+  },
+  {
+    "image": "adiva.jpg",
+    "offerClass": "left",
+    "offer": "30%",
+    "brand": "adiva se",
+    "href": "#"
+  },
+  {
+    "image": "strada-2.jpg",
+    "offerClass": "right",
+    "offer": "30%",
+    "brand": "strada 2",
+    "href": "#"
+  },
+  {
+    "image": "PROFILESUBx2.jpg",
+    "offerClass": "left",
+    "offer": "30%",
+    "brand": "subwoofers",
+    "href": "#"
+  }
+]
